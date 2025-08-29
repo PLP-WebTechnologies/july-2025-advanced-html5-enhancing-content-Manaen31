@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Week 2 Assignment - Enhanced HTML5 Form with semantic structure, accessibility, and validation" />
+  <meta name="keywords" content="HTML5, form, accessibility, validation, assignment" />
+  <meta name="author" content="Joshua" />
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+  <header>
+    <h1>Week 2 Assignment: Enhanced HTML5 Form</h1>
+    <p>This page demonstrates semantic structure, accessibility, and form validation features.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📋 Features Overview</h2>
+      <ul>
+        <li>Semantic HTML5 layout</li>
+        <li>Accessible form elements</li>
+        <li>Validation and autocomplete</li>
+        <li>Tables and media integration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📊 Sample Table</h2>
+      <table border="1">
+        <caption>User Preferences</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Favorite Color</th>
+            <th>Newsletter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Joshua</td>
+            <td>Blue</td>
+            <td>Subscribed</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>Green</td>
+            <td>Not Subscribed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>🎬 Embedded Media</h2>
+      <video controls width="300">
+        <source src="sample.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>📝 User Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required /><br /><br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required /><br /><br />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Choose a username" required /><br /><br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" /><br /><br />
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" placeholder="Repeat password" required /><br /><br />
+
+          <label for="readonly">Referral Code:</label>
+          <input type="text" id="readonly" name="referral" value="AUTO123" readonly /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>
+            <input type="checkbox" name="newsletter" checked />
+            Subscribe to newsletter
+          </label><br /><br />
+
+          <label>
+            <input type="radio" name="updates" value="email" required />
+            Receive updates via Email
+          </label><br />
+          <label>
+            <input type="radio" name="updates" value="sms" />
+            Receive updates via SMS
+          </label><br /><br />
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Joshua. All rights reserved.</p>
+  </footer>
+</body>
+</html>
